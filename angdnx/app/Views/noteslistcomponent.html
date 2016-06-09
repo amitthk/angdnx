@@ -1,0 +1,67 @@
+
+<div class="row">
+    <div class="col-sm-12">
+        <table class="table table-bordered">
+            <tr>
+                <td colspan="4">
+                    Edit (Select an Item below first)
+                </td>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Text</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+            <tr>
+                <td><input class="form-control" placeholder="Title" type="text" [(ngModel)]="selectedNote.Title" /></td>
+                <td><textarea class="form-control" placeholder="Text" type="text" [(ngModel)]="selectedNote.Text"></textarea></td>
+                <td><input type="button" value="Update" (click)="onUpdate(selectedNote)"/></td>
+                <td><input type="button" value="Delete" (click)="onDelete(selectedNote)"/></td>
+            </tr>
+        </table>
+    </div>
+</div>
+<div class="row">
+<div class="col-sm-12">
+<table class="table table-bordered">
+    <tr>
+        <th>Title</th>
+        <th>Text(Click to Select)</th>
+        <th>Id(Click To Select)</th>
+    </tr>
+<tr *ngFor="let note of allnotes">
+<td class="col-sm-2" (click)="onSelect(note)">{{note.Title}}</td><td class="col-sm-8" (click)="onSelect(note)"> {{note.Text}}</td><td (click)="onSelect(note)">{{note.Id}}</td>
+</tr>
+</table>
+</div>
+</div>
+<hr/>
+<div class="row">
+    <div class="col-sm-12">
+        <table class="table table-bordered">
+            <tr>
+            <th colspan="3">
+                Add
+            </th>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Text</th>
+                <th>(Add)</th>
+            </tr>
+            <tr>
+                <td>
+                    <input class="form-control" placeholder="Title" type="text" [(ngModel)]="newNote.Title" />
+                </td>
+                <td>
+                    <textarea class="form-control" placeholder="Text" type="text" [(ngModel)]="newNote.Text"></textarea>
+                </td>
+                <td>
+                    <input type="button" value="add" (click)="onAdd(newNote)">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</div>

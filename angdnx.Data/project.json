@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "NETStandard.Library": "1.5.0-rc2-24027",
+    "angdnx.Domain":"*"
+  },
+
+  "frameworks": {
+    "netstandard1.5": {
+      "imports": "dnxcore50"
+    }
+  },
+
+  "tooling": {
+    "defaultNamespace": "angdnx.Data"
+  }
+}

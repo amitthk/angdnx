@@ -1,0 +1,25 @@
+<html>
+<head>
+  <base href="/">
+	<title>Hello world</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" />
+<style type="text/css">
+	.main_content,.rhs_nav{
+		border:solid 1px #ccc;
+	}
+</style>
+    <script src="app/lib/shim.min.js"></script>
+    <script src="app/lib/zone.js"></script>
+    <script src="app/lib/Reflect.js"></script>
+    <script src="app/lib/system.src.js"></script>
+    <script src="app/lib/systemjs.config.js"></script> 
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+</head>
+<body>
+<div class="container">
+  <notes-list>
+</div>
+</body>
+</html>
