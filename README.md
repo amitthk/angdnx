@@ -24,6 +24,7 @@ npm install
 cd app
 tsc
 
+cd ..
 gulp
 
 dotnet build
