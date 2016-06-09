@@ -6,7 +6,7 @@ This is the source code for the article titled as above at codeproject:-
 Follow the following commands to build and run this app:-
 
 ------------------
-
+```
 mkdir testapp
 cd testapp
 
@@ -28,6 +28,7 @@ gulp
 
 dotnet build
 dotnet run
+```
 -----------------
 
 Following video demostrates the above commands :-
