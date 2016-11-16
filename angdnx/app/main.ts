@@ -1,13 +1,15 @@
 /// <reference path='../typings/index.d.ts' />
+///<reference path='../typings/globals/core-js/index.d.ts'/>
+///<reference path='../typings/globals/jasmine/index.d.ts'/>
+///<reference path='../typings/globals/node/index.d.ts'/>
 
-import { enableProdMode } from '@angular/core';
-import { bootstrap } from '@angular/platform-browser-dynamic';
-import { HTTP_PROVIDERS } from '@angular/http';
+//import { enableProdMode } from '@angular/core';
+//import { NgModule }      from '@angular/core';
+import { platformBrowserDynamic  } from '@angular/platform-browser-dynamic';
+import { AppModule } from './app.module';
 
-import { NotesListComponent } from './noteslistcomponent';
 
 // enableProdMode();
-
-bootstrap(NotesListComponent, [HTTP_PROVIDERS])
+platformBrowserDynamic().bootstrapModule(AppModule)
     .then(success => console.log('Bootstrap success'))
     .catch(error => console.log(error));

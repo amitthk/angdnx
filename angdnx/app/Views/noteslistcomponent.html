@@ -1,4 +1,5 @@
-
+<div ngForm name="main-form" class="container-fluid">
+    
 <div class="row">
     <div class="col-sm-12">
         <table class="table table-bordered">
@@ -14,8 +15,8 @@
                 <th>Delete</th>
             </tr>
             <tr>
-                <td><input class="form-control" placeholder="Title" type="text" [(ngModel)]="selectedNote.Title" /></td>
-                <td><textarea class="form-control" placeholder="Text" type="text" [(ngModel)]="selectedNote.Text"></textarea></td>
+                <td><input class="form-control" placeholder="Title" name="Edit_Title" type="text" [(ngModel)]="selectedNote.Title" /></td>
+                <td><textarea class="form-control" placeholder="Text" name="Edit_Text" type="text" [(ngModel)]="selectedNote.Text"></textarea></td>
                 <td><input type="button" value="Update" (click)="onUpdate(selectedNote)"/></td>
                 <td><input type="button" value="Delete" (click)="onDelete(selectedNote)"/></td>
             </tr>
@@ -52,10 +53,10 @@
             </tr>
             <tr>
                 <td>
-                    <input class="form-control" placeholder="Title" type="text" [(ngModel)]="newNote.Title" />
+                    <input class="form-control" placeholder="Title" name="Add_Title" type="text" [(ngModel)]="newNote.Title" />
                 </td>
                 <td>
-                    <textarea class="form-control" placeholder="Text" type="text" [(ngModel)]="newNote.Text"></textarea>
+                    <textarea class="form-control" placeholder="Text" name="Add_Text" type="text" [(ngModel)]="newNote.Text"></textarea>
                 </td>
                 <td>
                     <input type="button" value="add" (click)="onAdd(newNote)">
@@ -64,4 +65,5 @@
         </table>
     </div>
 
+</div>
 </div>

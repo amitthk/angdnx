@@ -180,4 +180,4 @@ gulp.task("watch-ui", ["default"], function () {
     gulp.watch(paths.js).on('change', browserSync.reload); 
 });
 
-gulp.task('default', ['ts:lint', 'build:ts', 'clean','copy-lib','bundle','copy-assets']);
+gulp.task('default', ['build:ts', 'clean','copy-lib','bundle','copy-assets']);

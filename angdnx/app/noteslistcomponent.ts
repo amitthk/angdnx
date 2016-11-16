@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { NotesService } from './Services/NotesService';
+import { NgModule }      from '@angular/core';
+import { FormsModule, FormGroup, FormControl }   from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
+import { HttpModule } from '@angular/http';
 import { Note } from './Models/Note';
 
 @Component({
